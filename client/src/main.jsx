@@ -5,7 +5,8 @@ import './index.css'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',//graphQL endpoint i.e our server url
+  // uri: 'http://localhost:4000/graphql',//graphQL endpoint i.e our server url
+  uri: 'https://graphql-l8ui.onrender.com',//graphQL endpoint i.e our server url
   cache: new InMemoryCache(),// Apollo Client uses to cache query results after fetching them.
   credentials: "include"// This tells Apollo Client to send cookies along with every request to the server.
 });
